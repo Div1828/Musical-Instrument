@@ -15,6 +15,15 @@
     @apply scale-90 bg-gray-500 shadow-lg;
     transition: transform 0.1s ease, background-color 0.1s ease, box-shadow 0.1s ease;
   }
+  .dark aside{
+    @apply bg-indigo-800
+  }
+  .dark h2{
+    @apply text-gray-400
+  }
+  .dark ul{
+    @apply text-white
+  }
 
   .dark body{
     @apply bg-indigo-950
