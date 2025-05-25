@@ -18,7 +18,11 @@
   },
   "homepage": "https://github.com/Div1828/Musical-Instrument#readme",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.7",
+    "@tailwindcss/cli": "^4.1.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
     "tailwindcss": "^4.1.7"
   }
 }

@@ -1,17 +1,35 @@
 @import "tailwindcss";
 
 
-.drum-button {
-  @apply w-24 h-24 rounded-lg bg-gray-500 text-indigo-800 text-xl font-bold shadow-md 
-         hover:bg-gray-600 focus:outline-none focus:ring-4 focus:ring-gray-300
-         transition-transform duration-150 ease-in-out active:scale-95;
-}
 
-@layer components {
+
+@layer utilities {
+
+  .drum-button {
+  @apply w-24 h-24 rounded-lg  bg-gray-400 text-indigo-700 text-xl font-bold shadow-md 
+          hover:bg-gray-500 focus:outline-none focus:ring-4 focus:ring-gray-300
+         transition-transform duration-150 ease-in-out active:scale-95;
+  }
+
   .pressed {
-    @apply scale-90 bg-gray-700 shadow-lg;
+    @apply scale-90 bg-gray-500 shadow-lg;
     transition: transform 0.1s ease, background-color 0.1s ease, box-shadow 0.1s ease;
   }
+
+  .dark body{
+    @apply bg-indigo-950
+  }
+  .dark h1{
+    @apply text-gray-300
+  }
+  .dark .drum-button{
+    @apply bg-indigo-800 text-white hover:bg-indigo-400;
+  }
+  .dark .pressed {
+    @apply bg-indigo-400;
+  }
+  .dark #toggledarkmode{
+    @apply bg-white text-indigo-700
+
+  }
 }
-
-

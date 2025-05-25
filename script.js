@@ -1,3 +1,12 @@
+const toggleButton = document.getElementById('toggledarkmode');
+
+toggleButton.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark');
+  toggleButton.textContent = document.documentElement.classList.contains('dark') ? 'LIGHT' : 'DARK';
+});
+
+
+
 
 const sounds = {
   A:"kick drum.wav", S:"snare drum.wav", D:"hi-hat closed.wav", F:"hi-hat open.wav", G:"tom 1.wav", H:"tom 2.wav", J:"crash cymbal.wav", K:"ride cymbal.wav"
